@@ -1,5 +1,6 @@
 
 # Program for testing for the DRAM "rowhammer" problem
+# Copyright 2020 Chulkee Lee, Thomas Dullien
 
 
 "Rowhammer" is a problem with recent DRAM modules in which repeatedly
@@ -13,11 +14,7 @@ The rowhammer problem is described by:
   Accessing Them: An Experimental Study of DRAM Disturbance
   Errors](http://users.ece.cmu.edu/~yoonguk/papers/kim-isca14.pdf)"
   (2014).
-
-* Our blog post, "[Exploiting the DRAM rowhammer bug to gain kernel
-  privileges](http://googleprojectzero.blogspot.com/2015/03/exploiting-dram-rowhammer-bug-to-gain.html)"
-  (2015), on the blog of Google's Project Zero.
-
+  
 How to run the test:
 
 ```
@@ -46,22 +43,6 @@ system.  Bit flips caused by row hammering breach the CPU's memory
 protection.  On a machine that is susceptible to the rowhammer
 problem, one process can corrupt pages used by other processes or by
 the kernel.
-
-
-## Mailing list
-
-We invite people to post results from this test on the following
-mailing list:
-
-https://groups.google.com/group/rowhammer-discuss/
-
-This mailing list is intended to be used for:
-
-* Reporting experimental results.
-* Discussing avenues of exploitation for rowhammer-induced bit flips.
-* Discussing mitigations.
-* Any other discussion of the rowhammer problem.
-
 
 ## How the test works
 
