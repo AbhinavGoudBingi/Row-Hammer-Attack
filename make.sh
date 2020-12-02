@@ -18,4 +18,4 @@ set -eu
 
 cflags="-g -Wall -Werror -O2"
 
-g++ $cflags cache_test_physaddr.cc -o cache_test_physaddr
+g++ $cflags rowhammer_test.cc -o rowhammer_test
