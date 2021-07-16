@@ -1,3 +1,5 @@
+This repository contains code used for the project done as part of the course CS - Computer Architecture Lab under prof. Bernard Menezes in the Spring 2020-21 Semester at IIT Bombay
+
 
 # Program for testing for the DRAM "rowhammer" problem
 # Copyright 2020 Chulkee Lee, Thomas Dullien
